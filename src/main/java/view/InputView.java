@@ -1,6 +1,9 @@
 package view;
 
+import model.Lotto;
+
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class InputView {
@@ -16,6 +19,12 @@ public class InputView {
             System.out.println("올바른 숫자를 입력하세요.");
 
             return -1;
+        }
+    }
+
+    public List<Lotto> getWinningNumbers() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("지난 주 당첨 번호를 입력해 주세요.");
         }
     }
 
